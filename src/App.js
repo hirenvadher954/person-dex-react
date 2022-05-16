@@ -7,12 +7,7 @@ import React from 'react';
 const App = (props) => {
     const [searchField, setSearchField] = useState('');
     const [persons, setPersons] = useState([]);
-    console.log("App render")
-    const onSearchChange = (event) => {
-        const searchField = event.target.value.toLowerCase();
-        setSearchField(searchField);
-    }
-
+    const [filteredPersons, setFilteredPersons] = useState(persons);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -21,10 +16,14 @@ const App = (props) => {
     }, [])
 
     useEffect(() => {
-        persons.filter((person) => person.name.toLowerCase().includes(searchField));
+        const filteredPersons = persons.filter((person) => person.name.toLowerCase().includes(searchField));
+        setFilteredPersons(filteredPersons)
     }, [persons, searchField]);
 
-    const filteredPersons = persons.filter((person) => person.name.toLowerCase().includes(searchField));
+    const onSearchChange = (event) => {
+        const searchField = event.target.value.toLowerCase();
+        setSearchField(searchField);
+    }
 
     return (
         <div className="App">
