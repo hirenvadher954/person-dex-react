@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/person-dex-react/static/css/main.0bf81f6f.css",
+    "main.js": "/person-dex-react/static/js/main.38c5c015.js",
+    "static/js/787.2e06231d.chunk.js": "/person-dex-react/static/js/787.2e06231d.chunk.js",
+    "index.html": "/person-dex-react/index.html",
+    "main.0bf81f6f.css.map": "/person-dex-react/static/css/main.0bf81f6f.css.map",
+    "main.38c5c015.js.map": "/person-dex-react/static/js/main.38c5c015.js.map",
+    "787.2e06231d.chunk.js.map": "/person-dex-react/static/js/787.2e06231d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bf81f6f.css",
+    "static/js/main.38c5c015.js"
+  ]
+}
